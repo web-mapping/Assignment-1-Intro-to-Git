@@ -1,9 +1,87 @@
-<!DOCTYPE html>
-<HTML>
-<HEAD>
-<TITLE>Welcome!</TITLE>
-</HEAD>
-<BODY>
-Hello World!
-</BODY>
-</HTML>
+<!-- This is a way to comment in an HTML file. -->
+<!-- The declaration below this instructs the browser that this is HTML 5 -->
+<!doctype html>
+<!-- Below is an opening tag for a container for HTML elements -->
+<html>
+<!-- The <head> element can include a titles, scripts, styles, and more -->
+<head>
+  <!-- The <style> element allows you to specify how HTML elements should render
+  in a browser.  Also, HTML comments can span multiple lines. -->
+  <style>
+    /* This is a way to comment in a cascading style sheet (CSS).  Comments can
+    also span multiple lines in a style sheet.
+    The #about_me below is referred to as a selector.
+    The # indicates that you are referencing the "id" HTML attribute. */
+    #about_me
+    /* Attributes of a selector are placed between curly brackets */
+    {
+      /* The position property specifies the position method used,
+      absolute fixes the position and does not scrolls the element
+      with the page */
+      position: fixed;
+      /* Padding generates space around the element, so that it is not flush
+      with the border. */
+      padding: 25px;
+      /* The elements will be 10px from the top of the viewing window. */
+      top: 10px;
+      /* The elements will be 10px from the left-side of the viewing window */
+      left: 510px;
+      /* Modifies the background-color property. */
+      background-color: black;
+      /* Modifies the color of the text. */
+      color: white;
+      /* Specifies the width of the element. container. */
+      width: 500px;
+    /* Closing curly bracket for the about_me selector. */
+    }
+    #my_picture
+    {
+      /* Setting the position to absolute fixes the position and does scroll
+      the element with the page */
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  /* The closing tag for the style element. */
+  </style>
+  <!-- Text within this tag appears in the browser toolbar and will be provided
+  as the title of the page if it is added to favorites/bookmarks -->
+  <title>Welcome to David Mills' web site!</title>s
+</head>
+<!-- Text, images, hyperlinks, tables, lists, etc. go in the body element. -->
+<body>
+  <!-- Div elements are used as containers which group together HTML elements
+    and apply CSS styles to them. This one uses the "id", "my_picture".-->
+  <div id="my_picture">
+    <!-- The img tag defines an image in HTML, using height and width will
+      override the images actual size and fit it to the dimensions in the tag.
+      -->
+    <img src="images/my_picture.jpg" height="500px" width="500px">
+  </div>
+  <div id="about_me">
+    <!-- The <h1> tag can be used to specify a heading font. -->
+    <h1>About Me</h1>
+    <!-- Skipping lines in the code does not skip lines in the browser. I only
+      skipped lines for aesthetic, readability, and functional purposes in the
+      code. -->
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+  <!-- This section earns bonus credit for undergraduate students
+   and is a requirement for graduate students.
+  <div id="research_interests">
+    <h1>Research Interests</h1>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+  -->
+</body>
+</html>
